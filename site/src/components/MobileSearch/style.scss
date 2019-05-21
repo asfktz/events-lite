@@ -1,0 +1,164 @@
+@import '../../utils/sass-mixins.scss';
+
+.MobileSearch {
+	width: 100%;
+	padding: 1rem 0 0;
+	/*display: flex;
+	flex-direction: column;
+	margin: 0 0;
+	flex: 1;*/
+	
+
+	@include md {
+		
+	}
+}
+
+.MobileSearch-term {
+	display: flex;
+	position: relative;
+	color: #5C2E82;
+	background: #FFF;
+	padding: 0 0;
+	border-radius: 0.2em;
+	flex: 1;
+	margin-left: auto;
+
+	@include md {
+	}
+}
+
+.MobileSearch-taggroup {
+	display: flex;
+	justify-content: center;
+}
+
+.MobileSearch-tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0;
+	align-items: center;
+	color: #5C2E82;
+
+	@include md {
+		
+	}
+}
+
+.MobileSearch-tags {
+	margin-right: 0;
+
+	@include md {
+		margin-right: 2em;
+	}
+}
+
+.MobileSearch-tags-label {
+	margin-left: 1em;
+	color: inherit;
+}
+
+.MobileSearch-term-icon {
+	margin: auto 0;
+	color: inherit;
+	width: 1em;
+	height: 1em;
+	flex: 0 0 1em;
+}
+
+
+.MobileSearch-tag {
+	margin-left: 0.4em;
+}
+
+.MobileSearch-tag:last-child {
+	margin-left: 0;
+}
+
+.MobileSearch-tag--active {
+	background: #FFF;
+	color: #5C2E82;
+}
+
+.MobileSearch-term-input {
+	font-size: 1em;
+	border: none;
+	background: transparent;
+	color: inherit;
+	outline: 0;
+	flex: 1;
+	padding: 0.5em;
+	width: auto;
+
+	@include md {
+		width: 20rem;
+		font-size: 1em;
+	}
+}
+
+.MobileSearch-term-input::placeholder {
+	color: inherit;
+	font-family: inherit;
+}
+
+.MobileSearch-group {
+	display: flex;
+	align-items: center
+}
+
+.MobileSearch-search-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	padding: 0 1em;
+	font-size: 1.1em;
+
+	@include md {
+		flex: 1;
+		margin-bottom: 0;
+		font-size: 1.5em;
+	}
+}
+
+.MobileSearch-filter-iconwrap {
+	position: relative;
+	display: inline-flex;
+	margin-left: 0.25em;
+}
+
+.MobileSearch-filter-icon {
+	// flex: 0 0 2em;
+	color: #5C2E82;
+	width: 1.1em;
+	height: 1.1em;
+}
+
+.MobileSearch-filter-label {
+	color: #5C2E82;
+}
+
+.MobileSearch-filter {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #5C2E82;
+	cursor: pointer;
+}
+
+.MobileSearch-filter-badge {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #e91e63;
+  width: 1.8em;
+  height: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translate(-63%, -46%);
+  color: #FFF;
+  border: 0.2em solid #FFF;
+  font-size: 0.5em;
+}

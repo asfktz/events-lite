@@ -1,0 +1,294 @@
+@import '../../utils/sass-mixins.scss';
+
+.CampPage {
+	background: #FFF;
+	position: relative;
+	padding: 1em 1em;
+}
+
+.CampPage-cover {
+	z-index: 0;
+	border-bottom: 1px solid #DDD;
+}
+
+.CampPage-cover-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.CampPage-header {
+	display: flex;
+	position: relative;
+}
+
+
+.CampPage-in {
+	// margin-bottom: 3rem;
+	font-size: 1rem;
+	line-height: 1.5em;
+	padding-bottom: 2rem;
+
+	@include md {
+		display: flex;
+		// min-height: 500px;
+	}
+}
+
+
+.CampPage-creators {
+	margin-bottom: 1em;
+}
+
+.CampPage-creators-header {
+	font-size: 1em;
+	font-weight: bold;
+
+	@include sm {
+		font-size: 1.1em;
+	}
+}
+
+.CampPage-bookings {
+	margin-bottom: 1rem;
+}
+
+.CampPage-attribute {
+	display: flex;
+	align-items: center;
+}
+
+.CampPage-attribute + .CampPage-attribute {
+	margin-top: 1em;
+}
+
+.CampPage-attribute-icon {
+	margin-left: 0.5rem;
+}
+
+.CampPage-attribute-note {
+	color: #999;
+	font-size: 0.9em;
+	line-height: 1em;
+}
+
+// .button {
+//   border: 0;
+//   border-radius: 0.25rem;
+//   background: #1E88E5;
+//   color: white;
+//   font-family: system-ui, sans-serif;
+//   font-size: 1rem;
+//   line-height: 1.2;
+//   white-space: nowrap;
+//   text-decoration: none;
+//   padding: 0.25rem 0.5rem;
+//   margin: 0.25rem;
+//   cursor: pointer;
+// }
+
+.CampPage-btn {
+	border: 0;
+	// background: #1E88E5;
+	color: white;
+	font-family: system-ui, sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	white-space: nowrap;
+	text-decoration: none;
+	padding: 0.25rem 0.5rem;
+	margin: 0.25rem;
+	cursor: pointer;
+	background: transparent;
+	color: #FFF;
+
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+}
+
+.CampPage-btn-icon {
+	// color: #5C2E82;
+}
+
+.CampPage-topbar {
+	background: transparent;
+	height: 2.5rem;
+	display: flex;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin-bottom: 2px;
+	display: flex;
+	align-items: center;
+	padding: 0 0.5em;
+
+	@include xlg {
+		padding: 0;
+	}
+}
+
+.CampPage-btn-share {
+	display: flex;
+	align-items: center;
+	padding: 0.5em 0em;
+	color: #67388c;
+	cursor: pointer;
+
+	.CampPage-btn-icon {
+		margin-left: 0.25em;
+	}
+}
+
+.CampPage-btn-back {
+	display: flex;
+	align-items: center;
+	padding: 0.5em 0em;
+	color: #67388c;
+	margin-left: auto;
+	cursor: pointer;
+	
+	.CampPage-btn-icon {
+		margin-left: 0.25em;
+	}
+}
+
+.CampPage-btn-back-label {
+	display: none;
+
+	@include sm {
+		display: block;
+	}
+}
+
+.CampPage-share-label {
+	margin-left: 0.5em;
+}
+
+.CampPage-Loader {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+}
+
+.CampPage-canceled-msg {
+	background: #B33A3A;
+	color: #FFF;
+	padding: 0.5em;
+}
+
+
+.CampPage-name {
+		// background: #5C2E82;
+    // color: #FFF;
+    // padding: 0.5em 2em 0.5em 2em;
+    // margin-top: -1.25em;
+    position: relative;
+    // margin-right: -2em;
+    font-size: 1.5em;
+    margin-bottom: 0.15em;
+
+    @include md {
+			font-size: 2em;
+    }
+}
+
+.CampPage-main {
+	// min-height: 300px;
+	background: #fff;
+	// padding: 0 2em 2em;
+	// display: flex;
+}
+
+.CampPage-about {
+	// flex: 1;
+
+	margin-bottom: 2em;
+
+	@include md {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
+.CampPage-image {
+	flex: 0 1 40rem;
+	border-radius: 0.25em;
+	margin-bottom: 1em;
+
+	@include md {
+		margin-bottom: 0;
+	}
+}
+
+.CampPage-content {
+	margin-left: 0;
+	flex: 1 0 20rem;
+
+	@include md {
+		margin-left: 2em;
+	}
+}
+
+.CampPage-events {
+	// flex: 1;	
+	// margin-right: 1em;
+
+}
+
+.CampPage-location {
+	margin-bottom: 1em;
+}
+
+.CampPage-address {
+	margin-left: 0.75em;
+	padding-left: 0.75em;
+	border-left: 1px solid #DDD;
+	color: #999;
+}
+
+.CampPage-typetag {
+	background: rgb(163, 117, 179);
+	padding: 0em 0.5em;
+	color: #FFF;
+	display: inline-flex;
+}
+
+.CampPage-eventsTitle {
+	font-size: 2em;
+}
+
+
+.CampPage-eventList {
+	margin: 0 -1em;
+	min-height: 50vh;
+
+	@include md {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.CampPage-eventItem {
+	flex: 1 0 30em;
+}
+
+.CampPage-tabs {
+	margin: 0 -1em 2em;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.CampPage-tab {
+	// flex: 1;
+	text-align: center;
+}
+
+.CampPage-description {
+	margin-bottom: 1em;
+}

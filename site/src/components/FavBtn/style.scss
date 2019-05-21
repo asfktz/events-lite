@@ -1,0 +1,14 @@
+.EventItem2-heart {
+  margin-right: auto;
+  flex: 0 0 2em;
+  fill: #FFF;
+  stroke: #5c2e82;
+  stroke-width: 0.05em;
+  cursor: pointer;
+  // filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.3));
+}
+
+.EventItem2-heart--active {
+  fill: #f50556;
+  stroke: #f50556;
+}

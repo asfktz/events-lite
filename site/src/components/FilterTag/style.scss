@@ -1,0 +1,50 @@
+.FilterTagList {
+  margin-top: 1em;
+  overflow: auto;
+  margin: 0.25em 0;
+  display: flex;
+}
+
+.FilterTag-spacer {
+  padding: 0.5em 0 0 0.5em;
+  flex: 0 0 auto;
+}
+
+.FilterTag-spacer:first-child {
+  padding-right: 1em
+}
+
+.FilterTag {
+  border-radius: 1em;
+  // margin-left: 0.5em;
+  padding: 0.25em 0.5;
+  font-size: 0.80em;
+  padding: 0.25em 0.5em;
+  border: 1px solid #DDD;
+  // border: 0.15em solid rgb(92, 46, 130);
+  font-weight: bold;
+  color: rgb(92, 46, 130);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgb(92, 46, 130);
+    background: rgb(92, 46, 130);
+    color: #FFF;
+  }
+}
+
+.FilterTag--btn {
+  background: rgb(92, 46, 130);
+  border: 1px solid rgb(92, 46, 130);
+  color: #FFF;
+}
+
+.FilterTag-close {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.15em;
+}
+

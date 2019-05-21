@@ -1,0 +1,24 @@
+
+.Image {
+  overflow: hidden;
+  will-change: opacity;
+}
+
+.Image-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.lazy-load-image-background {
+  width: 100%;
+}
+
+.Image-img img {
+  height: 100%;
+}
+
+.Image .lazy-load-image-background {
+  height: 100%;
+  width: 100%;
+}

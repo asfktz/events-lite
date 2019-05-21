@@ -1,0 +1,76 @@
+.Checkbox {
+  font-size: 1.2rem;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* Styles for hiding the native radio button */
+.Checkbox-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Styles for the basic appearance of the custom radio button */
+.Checkbox-input ~ .Checkbox-mask {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  border: 0.1em solid #5c2e82;
+  border-radius: 0.1em;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the hover state appearance of the custom radio button */
+.Checkbox-input:hover ~ .Checkbox-mask {
+  // border: 0.25em solid #5c2e82;
+  box-shadow: 0 0 0 0.15em rgba(92, 46, 130, 0.25);
+}
+
+/* Styles for the focus state appearance of the custom radio button */
+.Checkbox-input:focus ~ .Checkbox-mask {
+  border-color: #5c2e82;
+  box-shadow: 0 0 0 0.15em rgba(92, 46, 130, 0.25);
+}
+
+/* Styles for the checked state appearance of the custom radio button */
+.Checkbox-input:checked ~ .Checkbox-mask {
+  border: 0.1em solid #5c2e82;
+}
+
+/* Styles for the checked state appearance of the custom radio button */
+// .Checkbox-input:checked ~ .Checkbox-mask::after {
+//   content: '';
+//   width: 0.5em;
+//   height: 0.5em;
+//   margin: auto;
+//   position: absolute;
+//   border-radius: 50%;
+//   background: #5c2e82;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.Checkbox-v {
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0.2em;
+  color: #5c2e82;
+  transform: translate(5%, 0);
+}

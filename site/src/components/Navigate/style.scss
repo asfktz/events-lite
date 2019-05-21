@@ -1,0 +1,34 @@
+@import '../../utils/sass-mixins.scss';
+
+.Navigate {
+  display: flex;
+  align-items: center;
+}
+
+.Navigate-btns {
+  display: flex;
+  align-items: center;
+
+  font-size: 2em;
+
+  @include md {
+    font-size: 1.2em;
+  }
+}
+
+.GoogleMap-icon {
+  display: inline-block;
+  margin: 0.2em;
+  width: 1em;
+  height: 1em;
+}
+
+.WazeMap-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.Navigate-btn {
+  padding: 0.15em;
+}

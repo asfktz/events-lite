@@ -1,0 +1,98 @@
+@import '../../utils/sass-mixins.scss';
+
+
+.TagSelect-menu {
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	display: none;
+}
+
+.TagSelect-menuitem {
+
+}
+
+.TagSelect {
+	display: flex;
+	position: relative;
+	/*width: 400px;*/
+}
+
+.TagSelect-label {
+	color: #5C2E82;
+	flex: 1;
+	/*border: 1px solid #DDD;*/
+	border-radius: 0.2rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.TagSelect-label:hover {
+	border-color: #5C2E82;
+}
+
+
+.TagSelect-close {
+	width: 0.9em;
+	height: 0.9em;
+	/*margin-right: 0.2em;*/
+	margin-left: 0.3em;
+}
+
+.TagSelect-x:hover {
+	background: #FFF;
+}
+
+.TagSelect-select {
+	
+}
+
+.TagSelect-input {
+	color: #FFF;
+	border-radius: 0.5rem;
+}
+
+.TagSelect--active .TagSelect-label {
+	background: #FFF;
+	color: #5C2E82;
+	border-color: transparent;
+}
+
+
+.TagSelect-hidden {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.TagSelect-clickable {
+	padding: 0.1em 0.25em;
+	position: relative;
+	white-space: nowrap;
+	border: 1px solid #FFF;
+	border-radius: 0.25em;
+
+	@include md {
+		border: none;
+		border-radius: 0;
+	}
+}
+
+.TagSelect-clickable-label {
+	@include md {
+		border-bottom: 1px dashed #DDD;
+	}
+}
+
+.TagSelect--active .TagSelect-clickable-label {
+	border-bottom-color: transparent;
+}

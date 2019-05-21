@@ -1,0 +1,49 @@
+
+.MobileMenu {
+  margin-right: auto;
+}
+
+.MobileMenu-icon {
+	width: 2em;
+	height: 2em;
+	color: black;
+	cursor: pointer;
+  margin-right: auto;
+  padding: 0.2em;
+}
+
+.MobileMenu-menu {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.MobileMenu-menu .Menu-link {
+  border-bottom: 1px solid #DDD;
+  padding: 1em;
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.MobileMenu-header {
+  height: 4.5em;
+  padding: 0 1em;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+}
+
+.MobileMenu-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-left: auto;
+}
+
+.MobileMenu-user {
+  color: #999;
+  padding: 0;
+}

@@ -1,0 +1,52 @@
+@import '../../utils/sass-mixins.scss';
+
+.NoResults {
+	margin: 0 auto;
+	text-align: center;
+
+	@include md {
+		margin: 5rem auto;
+	}
+}
+
+.NoResults-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 1em 0.5em;
+
+	@include md {
+		font-size: 1.5em;
+		font-weight: bold;
+		margin-bottom: 0.5em;
+	}
+}
+
+.NoResults-btns {
+	
+}
+
+.NoResults-text {
+	margin-bottom: 1em;
+	margin: 0 1em 1em;
+	font-size: 1em;
+
+	@include md {
+		margin-bottom: 0.5em;
+	}
+}
+
+.NoResults-btn {
+	background: #5C2E82;
+	color: #FFF;
+	display: inline-flex;
+	padding: 0.5em;
+	margin: 0.5em;
+	border: 0.1em solid #5C2E82;
+	border-radius: 0.25em;
+
+	&.is-secondary {
+		background: #FFF;
+		color: #5C2E82;
+		border-color: #5C2E82;
+	}
+}

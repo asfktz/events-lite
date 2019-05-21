@@ -1,0 +1,291 @@
+@import '../../utils/sass-mixins.scss';
+
+.EventPage {
+	background: #FFF;
+	position: relative;
+}
+
+.EventPage-cover {
+	z-index: 0;
+	border-bottom: 1px solid #DDD;
+}
+
+.EventPage-cover-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.EventPage-main {
+	// min-height: 300px;
+	background: #fff;
+	padding: 0 2em 2em;
+}
+
+.EventPage-header {
+	display: flex;
+	position: relative;
+}
+
+.EventPage-name {
+	background: #5C2E82;
+    color: #FFF;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: -1.25em;
+    position: relative;
+    margin-right: -2em;
+    font-size: 1em;
+
+    @include md {
+		font-size: 2em;
+    }
+}
+
+.EventPage-in {
+	// margin-bottom: 3rem;
+	font-size: 1rem;
+	line-height: 1.5em;
+	padding-bottom: 2rem;
+
+	@include md {
+		display: flex;
+		// min-height: 500px;
+	}
+}
+
+.EventPage-content {
+	overflow: hidden;
+
+	@include md {
+		flex: 3;
+		border-left: 1px solid #DDD;
+		padding-left: 4em;
+		margin-left: 4em;
+	}
+}
+
+.EventPage-in {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.EventPage-side {
+	flex: 2;
+}
+
+.EventPage-description {
+	margin-bottom: 1em;
+}
+
+.EventPage-description a {
+	color: #03a9f4;
+}
+
+.EventPage-creators {
+	margin-bottom: 1em;
+}
+
+.EventPage-creators-header {
+	font-size: 1em;
+	font-weight: bold;
+
+	@include sm {
+		font-size: 1.1em;
+	}
+}
+
+.EventPage-bookings {
+	margin-bottom: 1rem;
+}
+
+.EventPage-attribute {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+// .EventPage-attribute + .EventPage-attribute {
+// 	margin-top: 1em;
+// }
+
+.EventPage-attribute-icon {
+	margin-left: 0.5rem;
+}
+
+.EventPage-attribute-note {
+	color: #999;
+	font-size: 0.9em;
+	line-height: 1em;
+}
+
+// .button {
+//   border: 0;
+//   border-radius: 0.25rem;
+//   background: #1E88E5;
+//   color: white;
+//   font-family: system-ui, sans-serif;
+//   font-size: 1rem;
+//   line-height: 1.2;
+//   white-space: nowrap;
+//   text-decoration: none;
+//   padding: 0.25rem 0.5rem;
+//   margin: 0.25rem;
+//   cursor: pointer;
+// }
+
+.EventPage-btn {
+	border: 0;
+	// background: #1E88E5;
+	color: white;
+	font-family: system-ui, sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	white-space: nowrap;
+	text-decoration: none;
+	padding: 0.25rem 0.5rem;
+	margin: 0.25rem;
+	cursor: pointer;
+	background: transparent;
+	color: #FFF;
+
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+}
+
+.EventPage-btn-icon {
+	// color: #5C2E82;
+}
+
+.EventPage-topbar {
+	background: transparent;
+	height: 2.5rem;
+	display: flex;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin-bottom: 2px;
+	display: flex;
+	align-items: center;
+	padding: 0 0.5em;
+
+	@include xlg {
+		padding: 0;
+	}
+}
+
+.EventPage-btn-share {
+	display: flex;
+	align-items: center;
+	padding: 0.5em 0em;
+	color: #67388c;
+	cursor: pointer;
+
+	.EventPage-btn-icon {
+		margin-left: 0.25em;
+	}
+}
+
+.EventPage-btn-back {
+	display: flex;
+	align-items: center;
+	padding: 0.5em 0em;
+	color: #67388c;
+	margin-left: auto;
+	cursor: pointer;
+
+	.EventPage-btn-icon {
+		margin-left: 0.25em;
+	}
+}
+
+.EventPage-btn-back-label {
+	display: none;
+
+	@include sm {
+		display: block;
+	}
+}
+
+.EventPage-share-label {
+	margin-left: 0.5em;
+}
+
+.EventPage-Loader {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+}
+
+.EventPage-canceled-msg {
+	background: #B33A3A;
+	color: #FFF;
+	padding: 0.5em;
+}
+
+
+.approve-checkbox label {
+	font-size: 0.9rem;
+	color: #666;
+	font-style: italic;
+	font-weight: bold;
+	input {
+		margin-left: 10px;
+	}
+}
+
+.status {
+	&.ok {
+		color: green;
+	}
+	&.error {
+		color: red
+	}
+}
+
+.EventPage-registration-btn {
+	background: #5C2E82;
+	color: #FFF;
+	padding: 0.5em 1.5em;
+	display: inline-flex;
+	border-radius: 0.25em;
+}
+
+
+
+.RegisterModal-title {
+	font-size: 1.5em;
+	color: #000;
+}
+
+.RegisterModal-eventName {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.EventPage-camps {
+	margin-top: 2em;
+}
+
+.EventPage-camp {
+	color: #5C2E82;
+	font-weight: bold;
+}
+
+.EventPage-camps-title {
+	font-weight: bold;
+}
+
+.EventPage-FavBtn {
+  position: absolute;
+  left: 0.25em;
+  top: 0.25em;
+}
+
+.EventPage-imagewrap {
+	position: relative;
+}

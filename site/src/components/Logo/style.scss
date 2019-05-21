@@ -1,0 +1,29 @@
+
+.Logo {
+  display: flex;
+}
+
+.Logo-label {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.Logo-label-a {
+  font-size: 1.3em;
+  border-left: 1px solid #ddd;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
+}
+
+.Logo-label-b {
+  font-size: 0.65em;
+}
+
+.Logo-image {
+  width: 3em;
+  height: 3em;
+  fill: inherit;
+  margin-left: 0.5em;
+}

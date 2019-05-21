@@ -1,0 +1,199 @@
+@import '../../utils/sass-mixins.scss';
+
+.EventItem2 {
+	overflow: hidden;
+	
+	position: relative;
+	background: #FFF;
+
+	margin: 0 0.5em 1em;
+	flex: 0 0 calc(100% - 2em);
+
+	.EventItem2-ratio {
+		padding-top: 115%;
+	}
+
+	@include md {
+		margin: 0 1em 2.5em;
+		flex: 0 0 calc(50% - 2em);
+	}
+
+	@include xlg {
+		margin: 0 1em 2.5em;
+		flex: 0 0 calc(33.3% - 2em);
+	}
+}
+
+.EventItem2--canceled .EventItem2-in {
+	opacity: 0.5;
+}
+
+
+.EventItem2-in {
+	display: flex;
+	// flex-direction: column;
+}
+
+.EventItem2-image {
+	background: #FFF;
+	color: #FFF;
+	object-fit: cover;
+	height: 50%;
+	width: 100%;
+	border-radius: 0.3em;
+	box-shadow: 0 0.05em 0.3em -0.2em #000;
+	flex-basis: 6rem;
+	flex-shrink: 0;
+	margin: 0 0 0 0em;
+	border-radius: 0.25em;
+	overflow: hidden;
+
+	@include md {
+		margin: 0 0 0 0;
+		flex-basis: 13rem;
+	}
+}
+
+.EventItem2 {
+	position: relative;
+}
+
+.EventItem2-main {
+	padding: 0 1.5em 0 0;
+	flex: 1;
+	// border-right: 1px solid #DDD;
+	display: flex;
+	flex-direction: column;
+}
+
+.EventItem2-heading {
+
+}
+
+.EventItem2-title {
+	font-size: 1em;
+	// margin-bottom: 0.5em;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 0.5em;
+	// line-height: 1.2em;
+
+	@include sm {
+		// font-size: 1.1em;
+		// margin-bottom: 0;
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+		
+	}
+}
+
+
+.EventItem2-subtitle {
+	font-size: 0.8em;
+	color: #6b6a6a;
+	margin-bottom: 0.25em;
+	line-height: 1.5em;
+	// display: flex;
+	// align-items: center;
+}
+
+.EventItem2-divider {
+	width: 0.1em;
+	background: #999;
+	height: 1.2em;
+	margin: 0 0.5em;
+}
+
+
+.EventItem2-description {
+	// overflow: hidden;
+	// text-overflow: ellipsis;
+	// white-space: nowrap;
+	// margin-bottom: 0.5em;
+	display: flex;
+	flex-direction: column;
+
+	&:empty {
+		display: none;
+	}
+
+	font-size: 0.8em;
+}
+
+.EventItem2-genre {
+	margin-top: auto;
+}
+
+.EventItem2-genre-tag {
+	padding: 0.2em 0.5em;
+	// border: 0.05rem solid #DDD;
+	border-radius: 0.2em;
+	font-size: 0.85em;
+	background: #FFF;
+	display: inline-flex;
+}
+
+.EventItem2-time {
+	font-size: 0.9em;
+}
+
+.EventItem2-cancel-badge {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ca2828;
+	color: #FFF;
+	z-index: 9;
+	padding: 0.25em 0.5em;
+	margin: 0.5em;
+	border-radius: 0.2em;
+	font-size: 0.9em;
+	box-shadow: 0 0 3px -2px #000;
+}
+
+.EventItem2-more {
+	margin-left: auto;
+	background: #FFF;
+	color: #5C2E82;
+	font-size: 0.8em;
+	padding: 0.15em 0;
+	border-radius: 0;
+	text-decoration: underline;
+}
+
+.EventItem2-location {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+.EventItem2-time {
+	font-size: 0.8em;
+}
+
+.EventItem2-location {
+	font-size: 0.8em;
+	color: #999;
+}
+
+.EventItem2-address {
+	font-size: 0.8em;
+}
+
+.EventItem2-genre {
+	font-size: 0.8em;
+}
+
+.EventItem2-zone {
+	margin-left: 0.5em;
+	border-left: 1px solid #DDD;
+	padding-left: 0.5em;
+}
+
+.EventItem2-header {
+	display: flex;
+}

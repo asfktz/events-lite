@@ -1,0 +1,21 @@
+
+.Loader {
+	background: #FFF;
+	
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.Loader-spinner {
+	direction: ltr;
+	margin-bottom: 2em;
+}
+
+.Loader-label {
+
+}

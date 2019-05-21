@@ -1,0 +1,120 @@
+@import '../../utils/sass-mixins.scss';
+
+.FilterGroup-main {}
+.FilterGroup-select {}
+.FilterGroup-select-label {}
+
+.FilterGroup-selected {
+  cursor: pointer;
+}
+
+.FilterGroup-selected-label {}
+
+.FilterDrawer {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFF;
+
+  @include md {
+    width: 15rem;
+    margin-right: auto;
+  }
+}
+
+.FilterDrawer-header {
+  font-size: 1em;
+  padding: 1rem;
+  border-bottom: 0.05rem solid #DDD;
+  display: flex;
+  align-items: center;
+}
+
+.FilterDrawer-heading {
+  font-weight: bold;
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.FilterDrawer-main {
+  padding: 1rem 1rem;
+  overflow: auto;
+  flex: 1;
+}
+
+.FilterGroup-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.FilterGroup-selected {
+  color: #5C2E82; 
+  display: flex;
+  align-items: center;
+}
+
+.FilterGroup-selected-label {
+  font-size: 1.1em;
+}
+
+
+.FilterDrawer-group + .FilterDrawer-group {
+  margin-top: 1.5rem;
+}
+
+.FilterDrawer-field {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0 0;
+}
+
+.FilterGroup-select {
+  display: flex;
+  // border: 1px solid #DDD;
+  padding: 1em;
+  align-items: center;
+  border-radius: 0.25em;
+}
+
+.FilterGroup-select-label {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.FilterDrawer-label {
+  flex: 1;
+  color: #5C2E82;
+  // font-size: 0.8em;
+}
+
+
+.FilterDrawer-label {
+  margin: 0 0.75em;
+}
+
+.FilterDrawer-footer {
+  display: flex;
+}
+
+.FilterDrawer-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  background: red;
+  margin: 0.5em;
+  border-radius: 0.25em;
+  background-color: #5C2E82;
+  color: #FFF;
+}
+
+.FilterGroup-title--big {
+  font-size: 2em;
+}

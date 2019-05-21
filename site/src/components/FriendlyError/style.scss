@@ -1,0 +1,33 @@
+@import '../../utils/sass-mixins.scss';
+
+.ErrorMsg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 1em;
+
+	@include md {
+		padding: 2em;
+	}
+}
+
+.ErrorMsg-title {
+	font-weight: bold;
+	margin-bottom: 0.25em;
+	font-size: 1.2em;
+
+	@include md {
+		font-size: 1.5em;
+	}
+}
+
+.ErrorMsg-title span {
+	display: inline-block;
+}

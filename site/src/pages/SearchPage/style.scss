@@ -1,0 +1,175 @@
+@import '../../utils/sass-mixins.scss';
+
+.EventListPage {
+
+}
+
+.EventListPage-header {
+	/*background: url("../../assets/header-cover.png");*/
+    /*background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+	// height: 80px;
+    background-color: #FFF;
+    color: #000;
+    box-shadow: 0 0 1em rgba(0,0,0,0.15);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
+    padding: 0.5em 0;
+
+    @include md {
+    	margin-bottom: 2rem;
+    }
+}
+
+.EventListPage-header-in {
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	display: flex;
+	// align-items: center;
+	padding: 0 0.5em 0;
+	position: relative;
+
+	// height: 5rem;
+
+	flex-direction: column;
+
+	@include md {
+		padding: 0 0.5rem 0;
+		justify-content: center;
+		// height: 25rem;
+	}
+}
+
+.EventListPage-header-topbar {
+	flex: 0 0 3rem;
+	display: flex;
+	align-items: center;
+	padding: 0.75rem 0;
+}
+
+.EventListPage-header-main {
+	position: relative;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.EventListPage-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto 0;
+	width: 100%;
+	max-width: 1280px;
+	transform: translate3d(0,0,0);
+	margin-top: 1rem;
+
+	@include sm {
+		justify-content: flex-start;
+		// margin-top: -10vh;
+	}
+}
+
+.EventListPage-sticky {
+    background-color: #FFF;
+    // border-bottom: 1px solid #DDD;
+		z-index: 1;
+    @include sm {}
+
+    position: sticky;
+    top: 0;
+}
+
+.EventListPage-sticky-in {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.EventListPage-header-logo-lg {
+	// width: 15em;
+	margin: 0 auto;
+	display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.EventListPage-header-logo-sm {
+	width: 9em;
+	margin-left: auto;
+	margin-right: 0.5rem;
+	margin-top: 0;
+}
+
+.EventListPage-btn-back {
+	display: flex;
+	align-items: center;
+	// padding: 0 0em;
+	padding: 0.5em 0em;
+	color: #FFF;
+	margin-right: auto;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	
+	.EventListPage-btn-icon {
+		margin-left: 0.25em;
+	}
+}
+
+.EventListPage-Loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 2em 0;
+}
+
+.EventListPage-menu {
+}
+
+.Menu-link {
+	color: inherit;
+	padding: 0 1em;
+	cursor: pointer;
+	font-size: 0.95rem;
+
+
+	&.active {
+		font-weight: bold;
+	}
+}
+
+.Menu-login-link {
+  border-right: 1px solid #DDD;
+  margin-right: 1em;
+  padding-left: 0;
+  padding-right: 2em;
+}
+
+.EventListPage-mobilemenu {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	z-index: 1;
+}
+
+.EventListPage-mobilemenu-link {
+	padding: 1em 1em;
+	border-bottom: 1px solid #DDD;
+}
+
+.Logo {
+	display: flex;
+}
+
+.Logo-label {
+	color: #FFF;
+}

@@ -1,0 +1,22 @@
+.Zone {
+  display: inline-flex;
+  align-items: center;
+}
+
+.Zone-point {
+  width: 0.6em;
+  height: 0.6em;
+  background: #000;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+.Zone-label {
+  color: #000;
+  // margin-left: 0.6em;
+  // border-left: 1px solid #DDD;
+  // padding-left: 0.6em;
+  line-height: 1;
+}

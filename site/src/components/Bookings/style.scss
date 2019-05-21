@@ -1,0 +1,43 @@
+@import '../../utils/sass-mixins.scss';
+
+.Bookings {
+	margin-bottom: 1em;
+}
+
+.Bookings-row {
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.Bookings-count {
+	border: 1px solid red;
+	width: 1.6em;
+	height: 1.6em;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-left: 1rem;
+	background: red;
+	color: #FFF;
+}
+
+.Bookings-row--canceled {
+	text-decoration: line-through;
+}
+
+.Bookings-main {
+	margin-left: 0.5em;
+}
+
+.Bookings-changesAlert {
+	display: flex;
+}
+
+.Bookings-changesAlert-icon {
+	margin-left: 0.5em;
+	fill: transparent;
+	stroke: rgb(255, 153, 0);
+}
